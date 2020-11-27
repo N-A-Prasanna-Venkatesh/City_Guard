@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".Police_SignUp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_photo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provide your Police ID Photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/Police_Photo_id"
+                android:layout_below="@+id/tv_photo_id"
+                android:src="@drawable/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/Police_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Police_Photo_id"
+                android:layout_marginTop="15dp"
+                android:hint="Name.."
+                android:textAllCaps="false"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/Police_number"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Police_name"
+                android:layout_marginTop="15dp"
+                android:hint="Phone Number.."
+                android:textAllCaps="false"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/Police_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Police_number"
+                android:layout_marginTop="15dp"
+                android:hint="Your Designation.."
+                android:textAllCaps="false"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/Police_id_number"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Police_designation"
+                android:layout_marginTop="15dp"
+                android:hint="Police ID Number.."
+                android:textAllCaps="false"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/Police_Username"
+                android:layout_below="@+id/Police_id_number"
+                android:layout_marginTop="15dp"
+                android:hint="Enter your emailId"
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/ic_username"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/ic_password"
+                android:id="@+id/Police_password"
+                android:hint="Password."
+                android:layout_below="@+id/Police_Username"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_password"
+                android:id="@+id/Police_password_retype"
+                android:textAlignment="center"
+                android:hint="Retype Password."
+                android:layout_below="@+id/Police_password"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/Save_Police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background1"
+                android:layout_below="@+id/Police_password_retype"
+                android:text="SignUp"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

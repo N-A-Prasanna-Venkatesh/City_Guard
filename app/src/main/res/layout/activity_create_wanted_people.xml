@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".CreateWantedPeople">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Create_Wanted_Image_View"
+
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+
+                android:src="@drawable/profile_image"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/Create_Wanted_Name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textColorHint="@android:color/holo_blue_dark"
+
+                android:hint="Enter Name of Criminal"
+                android:layout_below="@+id/Create_Wanted_Image_View"
+                android:layout_margin="15dp"/>
+            <EditText
+                android:id="@+id/Create_Wanted_Crime_Division"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textColorHint="@android:color/holo_blue_dark"
+
+                android:hint="Enter The Crime Division"
+                android:layout_below="@+id/Create_Wanted_Name"
+                android:layout_margin="15dp"/>
+            <EditText
+                android:id="@+id/Create_Wanted_Location"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textColorHint="@android:color/holo_blue_dark"
+
+                android:hint="Enter Crime Location"
+                android:layout_below="@+id/Create_Wanted_Crime_Division"
+                android:layout_margin="15dp"/>
+            <EditText
+                android:id="@+id/Create_Wanted_Description"
+
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textColorHint="@android:color/holo_blue_dark"
+
+                android:hint="Enter Description of Crime.."
+                android:layout_below="@+id/Create_Wanted_Location"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/SaveData"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+
+                android:text="Save Criminal Data"
+                android:textColor="@android:color/holo_blue_dark"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Create_Wanted_Description"
+                android:background="@drawable/background"
+                android:layout_margin="25dp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

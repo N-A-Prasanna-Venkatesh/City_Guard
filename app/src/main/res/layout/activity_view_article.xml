@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewArticle">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/View_Article_Image_view"
+
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:id="@+id/View_Article_Name"
+
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/View_Article_Image_view"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:id="@+id/View_Article_Division"
+
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/View_Article_Name"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:id="@+id/View_Article_Location"
+
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/View_Article_Division"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:id="@+id/View_Article_Description"
+
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/View_Article_Location"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:id="@+id/Know_Info_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Know an Information?"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_below="@+id/View_Article_Description"
+                />
+            <Button
+                android:id="@+id/View_Article_Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Know_Info_tv"
+                android:background="@drawable/background"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:padding="8dp"
+                android:text="Enter Information"/>
+            <Button
+                android:id="@+id/View_Article_View_All_Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/View_Article_Comment"
+                android:background="@drawable/background"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:padding="8dp"
+                android:text="View Informations"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

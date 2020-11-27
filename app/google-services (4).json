@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "472111461914",
+    "firebase_url": "https://minimisecrimes.firebaseio.com",
+    "project_id": "minimisecrimes",
+    "storage_bucket": "minimisecrimes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472111461914:android:4b1709c6dd7958463f03a3",
+        "android_client_info": {
+          "package_name": "com.Minimise.Crimes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472111461914-29b3vmd1ps47k9d8q7lrvbsu8uhr7fpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWqNNgVFaMpCZMKsssnHLudLxESQOsMRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472111461914-29b3vmd1ps47k9d8q7lrvbsu8uhr7fpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472111461914:android:6b7e5d407004da273f03a3",
+        "android_client_info": {
+          "package_name": "com.example.policescanner1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472111461914-j48e2j8j5apltnk4767a24f427k1ef5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.policescanner1",
+            "certificate_hash": "ba266b6fe7ef5ee63e8618cde144aefbd1c8af3d"
+          }
+        },
+        {
+          "client_id": "472111461914-29b3vmd1ps47k9d8q7lrvbsu8uhr7fpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWqNNgVFaMpCZMKsssnHLudLxESQOsMRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472111461914-29b3vmd1ps47k9d8q7lrvbsu8uhr7fpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

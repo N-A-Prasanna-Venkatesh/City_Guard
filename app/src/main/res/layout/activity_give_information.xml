@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiveInformation">
+
+    <Button
+        android:id="@+id/Give_Information_Photo_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background"
+        android:text="Attach a Photo"
+        android:padding="8dp"
+        android:layout_margin="15dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Give_Information_Photo_Button"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/Give_Information_ImageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile_image"
+                android:layout_margin="25dp"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/Give_Information_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:hint="Enter your Observations in this case!"
+                android:layout_below="@+id/Give_Information_ImageView"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/Give_Information_Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/background"
+                android:text="Submit Information"
+                android:layout_below="@+id/Give_Information_Comment"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

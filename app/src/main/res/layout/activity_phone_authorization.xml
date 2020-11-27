@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".PhoneAuthorization">
+
+
+        <RelativeLayout
+            android:id="@+id/phoneAuth"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number:"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_green_light"
+                        app:ccp_defaultNameCode="IN" />
+
+                    <EditText
+                        android:id="@+id/phoneText"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="9876543210"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/holo_green_light"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:backgroundTint="@android:color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/codeText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="25dp"
+            android:hint="Write you code here..."
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_below="@+id/phoneAuth"
+            android:drawableLeft="@drawable/ic_lock"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/continueNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/codeText"
+            android:layout_centerHorizontal="true"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:layout_marginTop="6dp"
+            android:textSize="25dp"
+            android:background="@drawable/background"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+</RelativeLayout>

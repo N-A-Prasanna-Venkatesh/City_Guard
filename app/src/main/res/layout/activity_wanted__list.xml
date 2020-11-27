@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wanted_List">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation_bar">
+
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/Create_Post"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Create Post"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/bottom_navigation_bar"
+        android:textColor="@android:color/holo_blue_dark"/>
+    <Button
+        android:id="@+id/AddWanted"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Add Wanted Person"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/bottom_navigation_bar"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_bar"
+        app:itemBackground="@android:color/holo_purple"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

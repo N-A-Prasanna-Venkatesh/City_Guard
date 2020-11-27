@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/list_element_view_information_image_view"
+        android:layout_width="match_parent"
+        android:src="@drawable/profile_image"
+        android:layout_height="150dp"/>
+    <TextView
+        android:id="@+id/list_element_view_information_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="italic"
+        android:text="Message entered"/>
+</LinearLayout>

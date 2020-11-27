@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Warning_Alerts"
+        android:title="Posts"
+        android:icon="@drawable/ic_warning_black_24dp"
+        />
+    <item
+        android:id="@+id/WantedList"
+        android:title="Wanted List"
+        android:icon="@drawable/ic_pan_tool_black_24dp"
+        />
+    <item
+        android:id="@+id/Complaint"
+        android:title="Complaint"
+        android:icon="@drawable/ic_comment_black_24dp"
+        />
+
+
+</menu>
