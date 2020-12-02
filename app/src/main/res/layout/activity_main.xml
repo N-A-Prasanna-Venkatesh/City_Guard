@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Enter app as.."
+        android:text="Login"
 
         android:textSize="50dp"
         android:textStyle="italic"
@@ -42,7 +42,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="25dp"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_below="@+id/Citizen"
         android:padding="16dp"
         android:id="@+id/Police"/>

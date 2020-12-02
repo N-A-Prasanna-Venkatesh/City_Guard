@@ -47,7 +47,7 @@
                         android:id="@+id/phoneText"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:hint="9876543210"
+                        android:hint="Enter your Phone Number"
                         android:textColor="@android:color/white"
                         android:textColorHint="@android:color/holo_green_light"
                         android:inputType="phone"

@@ -9,11 +9,23 @@
     <!-- TODO: Update blank fragment layout -->
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_wanted"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_purple"
+        android:background="@android:color/black"
+        android:text="This section contains the wanted criminals that are identified by the cops/police and are needing your help in spreading awareness and help them to find these criminals and bring them to justice.Please provide information."
+        />
+
         <GridView
             android:id="@+id/Fragment_list_view_wanted"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:numColumns="3"
+            android:layout_below="@+id/tv_wanted"
+            android:numColumns="1"
             />
 
 

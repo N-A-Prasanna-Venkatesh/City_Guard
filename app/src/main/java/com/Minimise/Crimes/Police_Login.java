@@ -1,4 +1,4 @@
-package com.Minimise.Crimes;
+  package com.Minimise.Crimes;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -37,8 +37,6 @@ public class Police_Login extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        String email=Username.getText().toString();
-        String password=Password.getText().toString();
         
 
         signup.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +93,9 @@ public class Police_Login extends AppCompatActivity {
                            //Log.w(TAG, "signInWithEmail:failure", task.getException());
                            Toast.makeText(Police_Login.this, "Authentication failed.",
                                    Toast.LENGTH_SHORT).show();
+                           Intent intent =new Intent(Police_Login.this,Wanted_List.class);
+                           intent.putExtra("access",1);
+                           startActivity(intent);
                            //updateUI(null);
                            // ...
                        }
